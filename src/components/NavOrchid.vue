@@ -5,7 +5,7 @@
             <ul>
                 <div class="junta">
                     <section class="logo">
-                        <li><a href="home.html"><img src="@/assets/logo orchid.png" alt=""
+                        <li><a href="home.html"><img src="@/assets/logo-orchid.png" alt=""
                             /></a></li>
                     </section>
                     <section class="main-left">
