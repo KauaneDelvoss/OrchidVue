@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkorchid"]=self["webpackChunkorchid"]||[]).push([[150],{7150:function(u,n,r){r.r(n),r.d(n,{default:function(){return f}});var e=function(){var u=this,n=u._self._c;return n("router-view")},t=[],l={},c=l,i=r(1001),s=(0,i.Z)(c,e,t,!1,null,null,null),f=s.exports}}]);
+//# sourceMappingURL=150.9af49411.js.map
