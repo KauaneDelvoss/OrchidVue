@@ -1,5 +1,5 @@
 <template>
-<div class="tudo">
+<div class="tudo-2">
     <!-- TÍTULO -->
     <form action="">
     <section class="showcase-1">
@@ -82,7 +82,7 @@ export default {
     margin: 0;
     padding: 0;
 }
-.tudo {
+.tudo-2 {
     width: 100%;
     height: 100%;
     position: fixed;

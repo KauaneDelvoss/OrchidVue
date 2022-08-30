@@ -1,5 +1,5 @@
 <template>
-    <div class="tudo">
+    <div class="tudo-3">
     <section class="sobrenos">
             <div class="element top-box-a">
                 <h1>SOBRE NÓS:</h1>
@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 
-.tudo {
+.tudo-3 {
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: #ffffff;

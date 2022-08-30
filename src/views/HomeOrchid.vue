@@ -1,5 +1,5 @@
 <template>
-<div class='tudo'>
+<div class='tudo-1'>
     <section class="info">
         <div class="bgordem">
           <header class="showcase">
@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style>
-.tudo {
+.tudo-1 {
     background: linear-gradient(#0c0e10, #24282E);
     color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;

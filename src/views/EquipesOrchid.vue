@@ -1,5 +1,5 @@
 <template>
-<div class="tudo">
+<div class="tudo-4">
     <section class="info">
         <div class="bgordem-2">
             <div class="top-box top-box-a-2">
