@@ -39,7 +39,7 @@
 
         <section class="showcase-5">
             <div class="top-box top-box-a-3">
-                <input type="text" placeholder="Senha" name="email" class="input-register">
+                <input type="text" placeholder="Senha" name="senha" class="input-register">
             </div>
         </section>
 
@@ -69,6 +69,11 @@ export default {
 </script>
 
 <style>
+
+.tudo-2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: linear-gradient(#0c0e10, #24282E);
+}
 
 :root {
     --primary: #24282E; 
@@ -133,8 +138,9 @@ form {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
+    color: #ffffff;
 }
 
 .showcase-1 .google-btn {

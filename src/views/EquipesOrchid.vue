@@ -19,6 +19,10 @@
 </script>
 
 <style>
+
+.tudo-4 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
 .bgordem-2 {
     background: url(@/assets/ordo-realitas.jpeg);
     background-size: cover;
