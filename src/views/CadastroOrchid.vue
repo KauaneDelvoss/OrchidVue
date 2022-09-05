@@ -1,5 +1,7 @@
 <template>
 <div class="cadastro">
+    <div class="top-box top-box-orchid-logo">
+        <router-link to="/"><img class="logo-orchid-cadastro" src="@/assets/logo-orchid.png" alt=""></router-link>
 <form action="" class="form-cadastro">
 
 <!-- TÍTULO -->
@@ -70,6 +72,7 @@
     </section>
 </form>
 </div>
+</div>
 </template>
 
 <script>
@@ -79,6 +82,11 @@ export default {
 </script>
 
 <style>
+.logo-orchid-cadastro {
+    display: grid;
+    width: 280px;
+}
+
 .cadastro {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     background: linear-gradient(#0c0e10, #24282E);
@@ -87,6 +95,7 @@ export default {
     position: absolute;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .form-cadastro {
@@ -98,6 +107,7 @@ export default {
     height: 30rem;
     display: grid;
     justify-content: center;
+    margin: 0;
 }
 
 

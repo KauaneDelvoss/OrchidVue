@@ -1,6 +1,8 @@
 <template>
 <div class="login">
     <!-- TÍTULO -->
+    <div class="top-box top-box-orchid-logo">
+        <router-link to="/"><img class="logo-orchid-login" src="@/assets/logo-orchid.png" alt=""></router-link>
     <form action="" class="form-login">
     <section class="showcase-login-1">
             <div class="top-box top-box-a-login">
@@ -60,6 +62,7 @@
 
     </form>
 </div>
+</div>
 </template>
 
 <script>
@@ -69,6 +72,10 @@ export default {
 </script>
 
 <style>
+.logo-orchid-login {
+    display: grid;
+    width: 280px;
+}
 
 .login {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -78,6 +85,12 @@ export default {
     position: absolute;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.logo-orchid-login {
+    display: grid;
+    padding: 10px;
 }
 
 :root {
@@ -95,7 +108,7 @@ export default {
 /* FORM */
 
 .form-login {
-    margin: 10rem auto;
+    /* margin: 10rem auto; */
     border: solid #B04141;
     border-width: 1px;
     padding: 2rem;
@@ -348,6 +361,7 @@ export default {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    font-size: 20px;
 }
 
 .top-box-a-login .forgot-pass:hover{

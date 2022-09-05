@@ -2,9 +2,9 @@
 <div class="tudo">
     <footer>
         <ul>
-            <li><a href="contato.html">Contato</a></li>
+            <li><router-link to="/contato">Contato</router-link></li>
             <li><linha>|</linha></li>
-            <li><a href="sobrenos.html">Sobre</a></li>
+            <li><router-link to="/sobrenos">Sobre</router-link></li>
         </ul>
     </footer>
 </div>

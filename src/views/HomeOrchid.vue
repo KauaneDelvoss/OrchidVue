@@ -8,9 +8,9 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               bibendum dictum felis, bibendum bibendum ante ultricies vel.
             </p>
-            <a href="#" class="btn">Criar conta</a>
+            <router-link to="/cadastro" class="btn">Criar conta</router-link>
             <a href="#" class="btn-two">Criar personagem</a>
-            <a href="equipe.html" class="btn-two">Equipes</a>
+            <router-link to="/equipes" class="btn-two">Equipes</router-link>
           </header>
         </div>
       </section>

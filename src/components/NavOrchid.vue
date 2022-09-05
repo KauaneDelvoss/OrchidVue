@@ -5,8 +5,8 @@
             <ul>
                 <div class="junta">
                     <section class="logo">
-                        <li><a href="home.html"><img src="@/assets/logo-orchid.png" alt=""
-                            /></a></li>
+                        <li><router-link to="/"><img src="@/assets/logo-orchid.png" alt=""
+                            /></router-link></li>
                     </section>
                     <section class="main-left">
 
@@ -17,9 +17,9 @@
                 </div>
                 <section class="main-right">
                     <li>
-                    <a class="link" href="login.html">Login</a>
+                    <router-link class="link" to="/login">Login</router-link>
                     <linha>|</linha>
-                    <a class="link createacc" href="cadastro.html">Criar conta</a>
+                    <router-link class="link createacc" to="cadastro">Criar conta</router-link>
                     </li>
                 </section>
             </ul>
