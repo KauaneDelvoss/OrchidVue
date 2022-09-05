@@ -6,6 +6,8 @@ import EquipesOrchid from '@/views/EquipesOrchid.vue'
 import LoginOrchid from '@/views/LoginOrchid.vue'
 import CadastroOrchid from '@/views/CadastroOrchid.vue'
 import ContatoOrchid from '@/views/ContatoOrchid.vue'
+import CriarEquipe from '@/views/CriarEquipe.vue'
+import EntrarEquipe from '@/views/EntrarEquipe.vue'
 
 Vue.use(VueRouter);
 
@@ -46,6 +48,14 @@ const routes = [
       {
         path: '/cadastro',
         component: CadastroOrchid
+      },
+      {
+        path: '/criarequipe',
+        component: CriarEquipe
+      },
+      {
+        path: '/entrarequipe',
+        component: EntrarEquipe
       },
     ],
   },

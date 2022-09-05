@@ -210,7 +210,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'top-box-a-cadastro top-box-b-cadastro';
-    height: 40px;
+    /* height: 40px; */
 }
 
 .showcase-cadastro-3 .top-box {
@@ -276,7 +276,6 @@ export default {
     grid-template-columns: 1fr;
     grid-template-areas: 
     'top-box-a-cadastro';
-    height: 40px;
 }
 
 .showcase-cadastro-6 .top-box {

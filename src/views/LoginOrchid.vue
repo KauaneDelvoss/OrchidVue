@@ -92,12 +92,6 @@ export default {
     margin: 0;
     padding: 0;
 }
-.tudo-2 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: linear-gradient(#0c0e10, #24282E);
-}
 /* FORM */
 
 .form-login {
