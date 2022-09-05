@@ -12,7 +12,7 @@
 
                         <li><a class="link" href="#">Fichas</a>
                         <linha>|</linha>
-                        <a class="link" href="equipe.html">Equipes</a></li>
+                        <router-link class="link" to="/equipes">Equipes</router-link></li>
                     </section>
                 </div>
                 <section class="main-right">

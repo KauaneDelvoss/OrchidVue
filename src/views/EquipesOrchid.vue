@@ -2,11 +2,11 @@
 <div class="tudo-4">
     <section class="info">
         <div class="bgordem-2">
-            <div class="top-box top-box-a-2">
-                <a href="#">CRIAR UMA EQUIPE</a>
+            <div class="top-box top-box-a-2" @click="irPara('/criarequipe')">
+                <router-link to="/entrarequipe">CRIAR UMA EQUIPE</router-link>
             </div>
             <hr class="top-box linecut-2">
-            <div class="top-box top-box-b-2">
+            <div class="top-box top-box-b-2" @click="irPara('/entrarequipe')">
                 <a href="#">JUNTAR-SE A UMA EQUIPE</a>
              </div>
         </div>
@@ -15,7 +15,13 @@
 </template>
 
 <script>
-
+export default{
+    methods:{
+        irPara(caminho){
+            this.$router.push({path: caminho})
+        }
+    }
+}
 </script>
 
 <style>
@@ -34,6 +40,9 @@
     height: 50rem;
 }
 
+.info {
+    cursor: pointer;
+}
 
 .info .top-box-a-2:hover{
     background-color: var(--secondary);
