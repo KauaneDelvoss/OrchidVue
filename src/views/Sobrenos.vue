@@ -1,7 +1,7 @@
 <template>
-    <div class="tudo-3">
-    <section class="sobrenos">
-            <div class="element top-box-a">
+    <div class="sobrenos">
+    <section class="sobrenos-section">
+            <div class="element top-box-a-sobrenos">
                 <h1>SOBRE NÓS:</h1>
                 <p>O Orchid Project é um trabalho desenvolvido pelos alunos Alisson Gabriel Santos, Caio Schmitz e Maria Eduarda Nichelle Ferreira do terceiro ano do Técnico em Informática Integrado ao Ensino Médio do Instituto Federal Catarinense Campus Araquari para a matéria de Projeto Integrador.
                     O Orchid Project tem como objetivo facilitar o demorado processo de criação de fichas de RPG baseadas no sistema de Ordem Paranormal, tornando a experiência de jogar Ordem Paranormal RPG acessível para todos.
@@ -9,7 +9,7 @@
                 </p>
             </div>
 
-            <div class="element top-box-b">
+            <div class="element top-box-b-sobrenos">
                 <img src="@/assets/Logo_vertical_branco.png" alt="">
             </div>
         </section>
@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 
-.tudo-3 {
+.sobrenos {
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -35,13 +35,14 @@ export default {
     top: 0px;
     }
 
-.sobrenos {
+.sobrenos-section {
     display: grid;
     margin-left: 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    'top-box-a top-box-b';
+    'top-box-a-sobrenos top-box-b-sobrenos';
     height: 50rem;
+    margin-top: 0;
 }
 
 .element {
@@ -50,11 +51,11 @@ export default {
     margin-top: -3rem;
 }
 
-.top-box-a {
-    grid-area: top-box-a;
+.top-box-a-sobrenos {
+    grid-area: top-box-a-sobrenos;
 }
 
-.top-box-a h1 {
+.top-box-a-sobrenos h1 {
     font-weight: bold;
     display: flex;
     justify-content: left;
@@ -62,7 +63,7 @@ export default {
     align-items: center
 }
 
-.top-box-a p {
+.top-box-a-sobrenos p {
     line-height: 3rem;
     text-align: justify;
     display: flex;
@@ -70,14 +71,14 @@ export default {
     font-size: 20px;
 }
 
-.top-box-b {
-    display: flex;
-    grid-area: top-box-b;
+.top-box-b-sobrenos {
+    display: grid;
+    grid-area: top-box-b-sobrenos;
     align-items: center;
     justify-content: center;
 }
 
-.top-box-b img {
+.top-box-b-sobrenos img {
     height: 500px;
     width: auto;
     display: flex;

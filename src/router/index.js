@@ -46,7 +46,7 @@ const routes = [
       {
         path: '/cadastro',
         component: CadastroOrchid
-      }
+      },
     ],
   },
 ];

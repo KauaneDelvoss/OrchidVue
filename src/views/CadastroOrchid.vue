@@ -1,70 +1,70 @@
 <template>
 <div class="cadastro">
-<form action="">
+<form action="" class="form-cadastro">
 
 <!-- TÍTULO -->
-    <section class="showcase-1">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-1">
+        <div class="top-box top-box-a-cadastro">
             <h1>CADASTRE-SE GRATUITAMENTE</h1>
         </div>
 
-        <div class="top-box top-box-b">
+        <div class="top-box top-box-b-cadastro">
             <button class="google-btn">Cadastre-se com Google</button>
         </div>
     </section>
 <!-- FIM DO TÍTULO -->
 
 <!-- LINHA -->
-    <section class="showcase-2">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-2">
+        <div class="top-box top-box-a-cadastro">
             <hr color="#B04141">
         </div>
 
-        <div class="top-box top-box-b">
+        <div class="top-box top-box-b-cadastro">
             <p>OU</p>
         </div>
 
-        <div class="top-box top-box-c">
+        <div class="top-box top-box-c-cadastro">
             <hr color="#B04141">
         </div>
     </section>
 <!-- FIM DA LINHA -->
 
 <!-- INPUTS -->
-    <section class="showcase-3">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-3">
+        <div class="top-box top-box-a-cadastro">
             <input type="text" placeholder="Nome" name="nome" class="input-register">
         </div>
 
-        <div class="top-box top-box-b">
+        <div class="top-box top-box-b-cadastro">
             <input type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
         </div>
     </section>
 
-    <section class="showcase-4">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-4">
+        <div class="top-box top-box-a-cadastro">
             <input type="text" placeholder="Nome de usuário" name="username" class="input-register">
         </div>
     </section>
 
-    <section class="showcase-5">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-5">
+        <div class="top-box top-box-a-cadastro">
             <input type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
         </div>
     </section>
 
-    <section class="showcase-6">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-6">
+        <div class="top-box top-box-a-cadastro">
             <input type="text" placeholder="Crie sua senha" name="senha-1" class="input-register">
         </div>
     </section>
 
-    <section class="showcase-7">
-        <div class="top-box top-box-a">
+    <section class="showcase-cadastro-7">
+        <div class="top-box top-box-a-cadastro">
             <input type="text" placeholder="Confirme sua senha" name="senha-1" class="input-register">
         </div>
 
-        <div class="top-box top-box-b">
+        <div class="top-box top-box-b-cadastro">
             <button class="create-acc-btn">Criar conta</button>
         </div>
     </section>
@@ -82,9 +82,14 @@ export default {
 .cadastro {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     background: linear-gradient(#0c0e10, #24282E);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
 
-form {
+.form-cadastro {
     margin: 10rem auto;
     border: solid #B04141;
     border-width: 1px;
@@ -96,16 +101,16 @@ form {
 }
 
 
-.top-box-a {
-    grid-area: top-box-a;
+.top-box-a-cadastro {
+    grid-area: top-box-a-cadastro;
 }
 
-.top-box-b {
-    grid-area: top-box-b;
+.top-box-b-cadastro {
+    grid-area: top-box-b-cadastro;
 }
 
-.top-box-c {
-    grid-area: top-box-c;
+.top-box-c-cadastro {
+    grid-area: top-box-c-cadastro;
 }
 
 .input-register {
@@ -114,24 +119,25 @@ form {
     height: 40px;
 }
 
-.showcase-1 {
+.showcase-cadastro-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a'
-    'top-box-b';
+    'top-box-a-cadastro'
+    'top-box-b-cadastro';
 }
 
-.showcase-1 h1 {
+.showcase-cadastro-1 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: 20px;
     margin: 0;
+    color: #fff
 }
 
-.showcase-1 .google-btn {
+.showcase-cadastro-1 .google-btn {
     background-color: var(--primary);
     color: var(--light);
     padding: 0.6rem 1.3rem;
@@ -147,171 +153,171 @@ form {
     width: 250px;
 }
 
-.showcase-1 .top-box-b {
+.showcase-cadastro-1 .top-box-b-cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.showcase-2 {
+.showcase-cadastro-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    'top-box-a top-box-b top-box-c';
+    'top-box-a-cadastro top-box-b-cadastro top-box-c-cadastro';
 }
 
-.showcase-2 .top-box {
+.showcase-cadastro-2 .top-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.showcase-2 .top-box-a {
+.showcase-cadastro-2 .top-box-a-cadastro {
     display: flex;
     align-items: center;
 }
 
-.showcase-2 .top-box-a hr {
+.showcase-cadastro-2 .top-box-a-cadastro hr {
     display: flex;
     align-items: center;
     width: 250px;
 }
 
-.showcase-2 .top-box-b p {
+.showcase-cadastro-2 .top-box-b-cadastro p {
     color: var(--red);
     font-weight: bold;
 }
 
-.showcase-2 .top-box-b {
+.showcase-cadastro-2 .top-box-b-cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.showcase-2 .top-box-c {
+.showcase-cadastro-2 .top-box-c-cadastro {
     display: flex;
     align-items: center;
 }
 
-.showcase-2 .top-box-c hr {
+.showcase-cadastro-2 .top-box-c-cadastro hr {
     display: flex;
     align-items: center;
     width: 250px;
 }
 
-.showcase-3 {
+.showcase-cadastro-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    'top-box-a top-box-b';
+    'top-box-a-cadastro top-box-b-cadastro';
     height: 40px;
 }
 
-.showcase-3 .top-box {
+.showcase-cadastro-3 .top-box {
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
 }
 
-.showcase-3 .top-box-b {
+.showcase-cadastro-3 .top-box-b-cadastro {
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
-.showcase-3 .top-box-a {
+.showcase-cadastro-3 .top-box-a-cadastro {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
-.showcase-3 .top-box-a input {
+.showcase-cadastro-3 .top-box-a-cadastro input {
     width: 383px;
 }
 
-.showcase-3 .top-box-b input {
+.showcase-cadastro-3 .top-box-b-cadastro input {
     width: 383px;
 }
 
-.showcase-4 {
+.showcase-cadastro-4 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a';
+    'top-box-a-cadastro';
 }
 
-.showcase-4 .top-box {
+.showcase-cadastro-4 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-4 .top-box-a input{
+.showcase-cadastro-4 .top-box-a-cadastro input{
     width: 780px; 
 }
 
-.showcase-5 {
+.showcase-cadastro-5 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a';
+    'top-box-a-cadastro';
 }
 
-.showcase-5 .top-box {
+.showcase-cadastro-5 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-5 .top-box-a input{
+.showcase-cadastro-5 .top-box-a-cadastro input{
     width: 780px; 
 }
 
-.showcase-6 {
+.showcase-cadastro-6 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a';
+    'top-box-a-cadastro';
     height: 40px;
 }
 
-.showcase-6 .top-box {
+.showcase-cadastro-6 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-6 .top-box-a input{
+.showcase-cadastro-6 .top-box-a-cadastro input{
     width: 780px; 
 }
 
-.showcase-7 {
+.showcase-cadastro-7 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    'top-box-a top-box-a top-box-b';
+    'top-box-a-cadastro top-box-a-cadastro top-box-b-cadastro';
 }
 
-.showcase-7 .top-box {
+.showcase-cadastro-7 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-7 .top-box-b {
+.showcase-cadastro-7 .top-box-b-cadastro {
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
-.showcase-7 .top-box-a {
+.showcase-cadastro-7 .top-box-a-cadastro {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
 
-.showcase-7 .top-box-a input {
+.showcase-cadastro-7 .top-box-a-cadastro input {
     width: 383px;
 }
 
-.showcase-7 .top-box-b .create-acc-btn {
+.showcase-cadastro-7 .top-box-b-cadastro .create-acc-btn {
     background-color: var(--red);
     color: var(--light);
     text-decoration: none;

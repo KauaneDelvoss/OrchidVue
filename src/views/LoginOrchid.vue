@@ -1,9 +1,9 @@
 <template>
-<div class="tudo-2">
+<div class="login">
     <!-- TÍTULO -->
-    <form action="">
-    <section class="showcase-1">
-            <div class="top-box top-box-a-3">
+    <form action="" class="form-login">
+    <section class="showcase-login-1">
+            <div class="top-box top-box-a-login">
                 <h1>LOGIN</h1>
             </div>
 
@@ -14,8 +14,8 @@
     <!-- FIM DO TÍTULO -->
 
     <!-- LINHA -->
-        <section class="showcase-2">
-            <div class="top-box top-box-a-3">
+        <section class="showcase-login-2">
+            <div class="top-box top-box-a-login">
                 <hr color="#B04141">
             </div>
 
@@ -23,7 +23,7 @@
                 <p>OU</p>
             </div>
 
-            <div class="top-box top-box-c-3">
+            <div class="top-box top-box-c-login">
                 <hr color="#B04141">
             </div>
         </section>
@@ -31,27 +31,27 @@
 
     <!-- INPUTS -->
 
-        <section class="showcase-4">
-            <div class="top-box top-box-a-3">
+        <section class="showcase-login-4">
+            <div class="top-box top-box-a-login">
                 <input type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
             </div>
         </section>
 
-        <section class="showcase-5">
-            <div class="top-box top-box-a-3">
+        <section class="showcase-login-5">
+            <div class="top-box top-box-a-login">
                 <input type="text" placeholder="Senha" name="senha" class="input-register">
             </div>
         </section>
 
-        <section class="showcase-7">
+        <section class="showcase-login-7">
 
             <div class="top-box top-box-b-3">
                 <button class="create-acc-btn">Login</button>
             </div>
         </section>
 
-        <section class="showcase-extra">
-            <div class="top-box-a-3">
+        <section class="showcase-login-extra">
+            <div class="top-box-a-login">
                 <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
             </div>
         </section>
@@ -70,9 +70,14 @@ export default {
 
 <style>
 
-.tudo-2 {
+.login {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     background: linear-gradient(#0c0e10, #24282E);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
 
 :root {
@@ -95,7 +100,7 @@ export default {
 }
 /* FORM */
 
-form {
+.form-login {
     margin: 10rem auto;
     border: solid #B04141;
     border-width: 1px;
@@ -107,16 +112,16 @@ form {
 }
 
 
-.top-box-a-3 {
-    grid-area: top-box-a-3;
+.top-box-a-login {
+    grid-area: top-box-a-login;
 }
 
 .top-box-b-3 {
     grid-area: top-box-b-3;
 }
 
-.top-box-c-3 {
-    grid-area: top-box-c-3;
+.top-box-c-login {
+    grid-area: top-box-c-login;
 }
 
 .input-register {
@@ -125,15 +130,15 @@ form {
     height: 40px;
 }
 
-.showcase-1 {
+.showcase-login-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a-3'
+    'top-box-a-login'
     'top-box-b-3';
 }
 
-.showcase-1 h1 {
+.showcase-login-1 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,7 +148,7 @@ form {
     color: #ffffff;
 }
 
-.showcase-1 .google-btn {
+.showcase-login-1 .google-btn {
     background-color: var(--primary);
     color: var(--light);
     padding: 0.6rem 1.3rem;
@@ -159,142 +164,142 @@ form {
     width: 250px;
 }
 
-.showcase-1 .top-box-b-3 {
+.showcase-login-1 .top-box-b-3 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.showcase-2 {
+.showcase-login-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    'top-box-a-3 top-box-b-3 top-box-c-3';
+    'top-box-a-login top-box-b-3 top-box-c-login';
 }
 
-.showcase-2 .top-box {
+.showcase-login-2 .top-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.showcase-2 .top-box-a-3 {
+.showcase-login-2 .top-box-a-login {
     display: flex;
     align-items: center;
 }
 
-.showcase-2 .top-box-a-3 hr {
+.showcase-login-2 .top-box-a-login hr {
     display: flex;
     align-items: center;
     width: 250px;
 }
 
-.showcase-2 .top-box-b-3 p {
+.showcase-login-2 .top-box-b-3 p {
     color: var(--red);
     font-weight: bold;
 }
 
-.showcase-2 .top-box-b-3 {
+.showcase-login-2 .top-box-b-3 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.showcase-2 .top-box-c-3 {
+.showcase-login-2 .top-box-c-login {
     display: flex;
     align-items: center;
 }
 
-.showcase-2 .top-box-c-3 hr {
+.showcase-login-2 .top-box-c-login hr {
     display: flex;
     align-items: center;
     width: 250px;
 }
 
-.showcase-3 {
+.showcase-login-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    'top-box-a-3 top-box-b-3';
+    'top-box-a-login top-box-b-3';
 }
 
-.showcase-3 .top-box {
+.showcase-login-3 .top-box {
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
 }
 
-.showcase-3 .top-box-b-3 {
+.showcase-login-3 .top-box-b-3 {
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
-.showcase-3 .top-box-a-3 {
+.showcase-login-3 .top-box-a-login {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
-.showcase-3 .top-box-a-3 input {
+.showcase-login-3 .top-box-a-login input {
     width: 383px;
 }
 
-.showcase-3 .top-box-b-3 input {
+.showcase-login-3 .top-box-b-3 input {
     width: 383px;
 }
 
-.showcase-4 {
+.showcase-login-4 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a-3';
+    'top-box-a-login';
     height: 40px;
 }
 
-.showcase-4 .top-box {
+.showcase-login-4 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-4 .top-box-a-3 input{
+.showcase-login-4 .top-box-a-login input{
     width: 780px; 
 }
 
-.showcase-5 {
+.showcase-login-5 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a-3';
+    'top-box-a-login';
     height: 40px;
 }
 
-.showcase-5 .top-box {
+.showcase-login-5 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-5 .top-box-a-3 input{
+.showcase-login-5 .top-box-a-login input{
     width: 780px; 
 }
 
-.showcase-6 {
+.showcase-login-6 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    'top-box-a-3';
+    'top-box-a-login';
 }
 
-.showcase-6 .top-box {
+.showcase-login-6 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-6 .top-box-a-3 input{
+.showcase-login-6 .top-box-a-login input{
     width: 780px; 
 }
 
-.showcase-7 {
+.showcase-login-7 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -302,29 +307,29 @@ form {
     height: 40px;
 }
 
-.showcase-7 .top-box {
+.showcase-login-7 .top-box {
     display: flex;
     align-items: center;
 }
 
-.showcase-7 .top-box-b-3 {
+.showcase-login-7 .top-box-b-3 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.showcase-7 .top-box-a-3 {
+.showcase-login-7 .top-box-a-login {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
 
-.showcase-7 .top-box-a-3 input {
+.showcase-login-7 .top-box-a-login input {
     width: 383px;
 }
 
-.showcase-7 .top-box-b-3 .create-acc-btn {
+.showcase-login-7 .top-box-b-3 .create-acc-btn {
     background-color: var(--red);
     color: var(--light);
     text-decoration: none;
@@ -335,14 +340,14 @@ form {
     height: 40px;
 }
 
-.showcase-extra {
+.showcase-login-extra {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    'top-box-a-3';
+    'top-box-a-login';
 }
 
-.top-box-a-3 .forgot-pass{
+.top-box-a-login .forgot-pass{
     text-decoration: none;
     color: var(--red);
     font-weight: bold;
@@ -351,7 +356,7 @@ form {
     margin-top: 1rem;
 }
 
-.top-box-a-3 .forgot-pass:hover{
+.top-box-a-login .forgot-pass:hover{
     text-decoration: underline;
 }
 </style>
