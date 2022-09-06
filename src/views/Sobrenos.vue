@@ -12,7 +12,19 @@
             <div class="element top-box-b-sobrenos">
                 <img src="@/assets/Logo_vertical_branco.png" alt="">
             </div>
-        </section>
+    </section>
+    <hr class="linha-sobrenos" color="#B04141"/>
+    <section class="contato-section">
+            <div class="element top-box-a-contato">
+            </div>
+
+            <div class="element top-box-b-contato">
+            </div>
+
+            <div class="top-box-c-contato">
+            </div>
+
+    </section>
     </div>
 </template>
 
@@ -23,7 +35,14 @@ export default {
 </script>
 
 <style scoped>
-
+.linha-sobrenos {
+    background-color: #B04141;
+    width: 1600px;
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
 .sobrenos {
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -37,18 +56,68 @@ export default {
 
 .sobrenos-section {
     display: grid;
-    margin-left: 2rem;
+    margin-left: 5rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'top-box-a-sobrenos top-box-b-sobrenos';
-    height: 50rem;
-    margin-top: 0;
+    /* height: 50rem; */
+    padding-top: 7rem;
 }
+
 
 .element {
     display: grid;
     padding: 0;
     margin-top: -3rem;
+}
+.contato-section {
+    display: grid;
+    margin-left: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'top-box-a-contato top-box-b-contato top-box-c-contato';
+    height: 50rem;
+    margin-top: 0;
+}
+
+.top-box-a-contato {
+    width: 500px;
+    height: 300px;
+    grid-area: top-box-a-contato;
+    background-image: url(@/assets/github-logo.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.top-box-b-contato {
+    grid-area: top-box-b-contato;
+    width: 500px;
+    height: 300px;
+    background-image: url(@/assets/instagram-logo.png);
+    background-position: center;
+    background-size: 45%;
+    background-repeat: no-repeat;
+}
+
+.top-box-c-contato {
+    grid-area: top-box-c-contato;
+    width: 500px;
+    height: 300px;
+    background-image: url(@/assets/twitter-logo.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.top-box-a-contato-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-box-a-contato-1 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .top-box-a-sobrenos {

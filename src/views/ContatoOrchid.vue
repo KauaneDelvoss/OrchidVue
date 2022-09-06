@@ -38,7 +38,7 @@ export default {
     'top-box-a-contato top-box-b-contato';
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    /* height: 50rem; */
 }
 
 .element {
